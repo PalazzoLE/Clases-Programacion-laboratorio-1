@@ -1,6 +1,16 @@
 #ifndef UTN_H_INCLUDED
 #define UTN_H_INCLUDED
 
+/**
+    utn_getEntero : pide un entero al usuario
+    @param pEdad: puntero a edad
+    @param reintentos: cantidad de reintentos
+    @param mensaje: mensaje de ingreso
+    @param mensajeError: mensade de error
+    @param min: minimo
+    @param max: maximo
+    @return : 0 OK, -1 ERROR
+*/
 int utn_getEntero(int* pEdad,int reintentos,char* mensaje,char* mensajeError,int min,int max);
 
 #endif // UTN_H_INCLUDED
