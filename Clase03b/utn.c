@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "utn.h"
 
-int getEntero(int* pEdad,int reintentos,char* mensaje,char* mensajeError,int min,int max)
+int utn_getEntero(int* pEdad,int reintentos,char* mensaje,char* mensajeError,int min,int max)
 {
     int retorno = -1;
     int auxiliarEdad;
