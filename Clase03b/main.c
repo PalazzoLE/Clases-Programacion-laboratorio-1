@@ -15,7 +15,7 @@ int main()
     */
     if(utn_getNumeroDecimal(&precio,3,"Ingrese precio:\t","\nERROR!!! su error es:",0,100) == 0)
     {
-        printf("El Precio es: %.2f",precio);
+        printf("El Precio es: %.2f pesos",precio);
     }
     return 0;
 }
