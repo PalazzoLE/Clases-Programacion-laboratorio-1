@@ -1,20 +1,22 @@
 #include <stdio_ext.h>
 #include <stdlib.h>
 #include "utn.h"
+static int getInt (int* numero);
 
-int utn_getEntero(int* pEdad,int reintentos,char* mensaje,char* mensajeError,int min,int max)
+
+int utn_getNumero(int* pNumero,int reintentos,char* mensaje,char* mensajeError,int min,int max)
 {
     int retorno = -1;
-    int auxiliarEdad;
+    int auxiliarNumero;
 
     for(;reintentos > 0;reintentos--)
     {
         printf("%s",mensaje);
-        if(scanf("%d",&auxiliarEdad) == 1)
+        if(getInt(&auxiliarNumero) == 0)
         {
-            if(auxiliarEdad < max && auxiliarEdad >= min)
+            if(auxiliarNumero < max && auxiliarNumero >= min)
             {
-                *pEdad = auxiliarEdad;
+                *pNumero = auxiliarNumero;
                 retorno = 0;
                 break;
             }
@@ -30,6 +32,18 @@ int utn_getEntero(int* pEdad,int reintentos,char* mensaje,char* mensajeError,int
             printf("\nNo es un numero\n");
             __fpurge(stdin);
         }
+    }
+    return retorno;
+}
+
+static int getInt (int* numero){
+    int ingreso;
+    int retorno;
+    if (scanf("%d",&ingreso) == 1){
+        *numero = ingreso;
+        retorno=0;
+    }else{
+        retorno=-1;
     }
     return retorno;
 }

@@ -11,6 +11,6 @@
     @param max: maximo
     @return : 0 OK, -1 ERROR
 */
-int utn_getEntero(int* pEdad,int reintentos,char* mensaje,char* mensajeError,int min,int max);
+int utn_getNumero(int* pNumero,int reintentos,char* mensaje,char* mensajeError,int min,int max);
 
 #endif // UTN_H_INCLUDED
