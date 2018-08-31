@@ -6,12 +6,17 @@ int g;
 
 int main()
 {
-    int edad;
-    if(utn_getNumero(&edad,3,"Ingrese edad:\t","\nERROR!!! su error es:",0,199) == 0)
+    //int edad;
+    float precio=0;
+    /*if(utn_getNumero(&edad,3,"Ingrese edad:\t","\nERROR!!! su error es:",0,199) == 0)
     {
         printf("La edad es: %d",edad);
     }
-
+    */
+    if(utn_getNumeroDecimal(&precio,3,"Ingrese precio:\t","\nERROR!!! su error es:",0,100) == 0)
+    {
+        printf("El Precio es: %.2f",precio);
+    }
     return 0;
 }
 

@@ -13,4 +13,6 @@
 */
 int utn_getNumero(int* pNumero,int reintentos,char* mensaje,char* mensajeError,int min,int max);
 
+float utn_getNumeroDecimal (float* pNumero,int reintentos,char* mensaje,char* mensajeError,float min,float max);
+
 #endif // UTN_H_INCLUDED
