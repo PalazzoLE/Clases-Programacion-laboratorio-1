@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1536186406 source:/home/alumno/Escritorio/Clases-Programacion-laboratorio-1/clase05/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<stdlib.h>
+	"utn.h"
+
+1536186406 /home/alumno/Escritorio/Clases-Programacion-laboratorio-1/clase05/utn.h
+
