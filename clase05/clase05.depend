@@ -7,8 +7,8 @@
 
 1536186406 /home/alumno/Escritorio/Clases-Programacion-laboratorio-1/clase05/utn.h
 
-1536190245 source:/home/alumno/Escritorio/Clases-Programacion-laboratorio-1/clase05/main.c
-	<stdio.h>
+1536195244 source:/home/alumno/Escritorio/Clases-Programacion-laboratorio-1/clase05/main.c
+	<stdio_ext.h>
 	<stdlib.h>
 	"utn.h"
 

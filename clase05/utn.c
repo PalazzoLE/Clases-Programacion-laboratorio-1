@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio_ext.h>
 #include <stdlib.h>
 #include <stdlib.h>
 #include "utn.h"
@@ -30,13 +30,14 @@ int utn_getNumero(int* pNumero,int reintentos,char* mensaje,char* mensajeError,i
             {
                 printf("%s",mensajeError);
                 printf("\nfuera de rango [%d-%d]\n",min,max);
+                __fpurge(stdin);
             }
         }
         else
         {
             printf("%s",mensajeError);
             printf("\nNo es un numero\n");
-            fflush(stdin);
+            __fpurge(stdin);
         }
     }
     return retorno;
@@ -61,14 +62,14 @@ float utn_getNumeroDecimal (float* pNumero,int reintentos,char* mensaje,char* me
             {
                 printf("%s",mensajeError);
                 printf("\nfuera de rango [%f-%f]\n",min,max);
-                fflush(stdin);
+                __fpurge(stdin);
             }
         }
         else
         {
             printf("%s",mensajeError);
             printf("\nNo es un numero\n");
-            fflush(stdin);
+            __fpurge(stdin);
         }
     }
     return retorno;
